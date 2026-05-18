@@ -3,11 +3,12 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: prometheus-sample-app-deployment
+  namespace: go-sample-microservice
 spec:
   selector:
     matchLabels:
       app: prometheus-sample-app
-  replicas: 5 # tells deployment to run 5 pods matching the template
+  replicas: 3 # tells deployment to run 3 pods matching the template
   template:
     metadata:
       labels:
