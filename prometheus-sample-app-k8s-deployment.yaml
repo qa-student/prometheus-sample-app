@@ -1,3 +1,14 @@
+# ---------------------------------------------------------
+# Namespace
+# ---------------------------------------------------------
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: go-sample-microservice
+
+---
+
 # deployment
 apiVersion: apps/v1
 kind: Deployment
